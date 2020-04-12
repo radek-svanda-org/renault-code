@@ -1,10 +1,18 @@
-// nothing here yet
-console.log('hello from lib');
-
-var i = document.createElement("input");
-i.setAttribute('type', "text");
-i.setAttribute('name', "precode");
-i.setAttribute('placeholder', "your pre code");
-
 var app = document.getElementById('app');
-app.appendChild(i);
+
+var precode = document.createElement("input");
+precode.setAttribute('type', "text");
+precode.setAttribute('name', "precode");
+precode.setAttribute('placeholder', "your pre code");
+
+app.appendChild(precode);
+
+var submit = document.createElement("input");
+submit.setAttribute('type', 'submit');
+submit.setAttribute('value', 'Get your code');
+
+app.appendChild(submit);
+
+submit.onclick = (evt) => {
+    document.getElementById('code').innerText = precode.value;
+}
