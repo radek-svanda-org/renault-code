@@ -1,0 +1,27 @@
+{
+  "name": "renault-code",
+  "version": "1.0.0",
+  "description": "For info and app see https://rsvanda.github.io/renault-code/",
+  "main": "src/index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rsvanda/renault-code.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rsvanda/renault-code/issues"
+  },
+  "homepage": "https://rsvanda.github.io/renault-code/",
+  "devDependencies": {
+    "webpack": "^4.42.1",
+    "webpack-cli": "^3.3.11"
+  }
+}
